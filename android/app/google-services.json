@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649462273150",
+    "project_id": "toumaidary",
+    "storage_bucket": "toumaidary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649462273150:android:9c12ac712b369ff82cf42f",
+        "android_client_info": {
+          "package_name": "com.example.toumai_dary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649462273150-37jkhdli9j9dfvp021teaps1d2bfutsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNNJr6yeh-d82igG_F_qZT9I-eyOO5rro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649462273150-37jkhdli9j9dfvp021teaps1d2bfutsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
