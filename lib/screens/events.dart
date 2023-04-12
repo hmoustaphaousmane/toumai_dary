@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toumai_dary/config/config.dart';
 
 class Events extends StatelessWidget {
   const Events({Key? key}) : super(key: key);
@@ -9,6 +10,6 @@ class Events extends StatelessWidget {
       child: Center(
         child: Text("Events Page"),
       ),
-    );
+      );
   }
 }
