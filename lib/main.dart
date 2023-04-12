@@ -26,8 +26,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        fontFamily: "Questrial",
-        primaryColor: Config.colors.primaryTextColor
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: Config.colors.primaryTextColor),
+          fontFamily: "Questrial",
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          primaryColor: Config.colors.primaryTextColor
       ),
       debugShowCheckedModeBanner: false,
       home:  HomePage(),
@@ -64,9 +66,9 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Config.colors.primaryColor,
-        title: Text("Toumaï Dary", style: TextStyle(color: Config.colors.whiteColor, fontFamily: "Eczar"),),
-      ),
+       ),
       body: container,
       drawer: Drawer(
         child: SingleChildScrollView(
@@ -114,19 +116,19 @@ class _HomePageState extends State<HomePage> {
         onTap: (){
           Navigator.pop(context);
           setState((){
-           if (id == 1){
-             currentPage = DrawerSections.home;
-           } else if (id == 2) {
-             currentPage = DrawerSections.touristic_sites;
-           } else if (id == 3) {
-             currentPage = DrawerSections.hotels;
-           } else if (id == 4){
-             currentPage = DrawerSections.good_meals;
-           } else if (id == 5) {
-             currentPage = DrawerSections.events;
-           } else if (id == 6) {
-             currentPage = DrawerSections.contact_us;
-           }
+            if (id == 1){
+              currentPage = DrawerSections.home;
+            } else if (id == 2) {
+              currentPage = DrawerSections.touristic_sites;
+            } else if (id == 3) {
+              currentPage = DrawerSections.hotels;
+            } else if (id == 4){
+              currentPage = DrawerSections.good_meals;
+            } else if (id == 5) {
+              currentPage = DrawerSections.events;
+            } else if (id == 6) {
+              currentPage = DrawerSections.contact_us;
+            }
           });
         },
         child: Padding(
@@ -150,13 +152,11 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-  enum DrawerSections {
-    home,
-    touristic_sites,
-    hotels,
-    good_meals,
-    events,
-    contact_us,
-  }
-
-
+enum DrawerSections {
+  home,
+  touristic_sites,
+  hotels,
+  good_meals,
+  events,
+  contact_us,
+}

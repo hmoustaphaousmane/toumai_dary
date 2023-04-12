@@ -1,21 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:toumai_dary/screens/body.dart';
 
 import '../config/config.dart';
 
-class Home extends StatefulWidget {
+class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _State();
-}
-
-class _State extends State<Home> {
-  @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('Home Page'),
-      ),
+    return Scaffold(
+      body: Body(),
     );
   }
 }

@@ -9,3 +9,5 @@ class _Color{
   final primaryTextColor = Color(0xFF000000);
   final whiteColor = Color(0xFFFFFFFF);
 }
+
+const double kDefaultPadding = 20.0;
