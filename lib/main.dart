@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
 import 'package:toumai_dary/config/config.dart';
 import 'package:toumai_dary/screens/contacts.dart';
 import 'package:toumai_dary/screens/events.dart';
@@ -9,7 +12,10 @@ import 'package:toumai_dary/screens/sites.dart';
 
 import 'screens/my_drawer_header.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
